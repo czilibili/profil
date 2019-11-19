@@ -16,4 +16,4 @@ def wrapper(func, statement):
     return f"{func}({statement})"
 
 def multiwrapper(*args, statement):
-    return mutliwrapper(*args[1:], statement=wrapper(args[0], statement)) if args else statement
+    return multiwrapper(*args[1:], statement=wrapper(args[0], statement)) if args else statement
